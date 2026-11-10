@@ -123,10 +123,3 @@ A working first patch is: MIDI-CV V/OCT to VCO V/OCT, MIDI-CV GATE to ADSR GATE,
 Two Rack traps, learned the hard way. First, in Rack 1 you stack cables on an output to send one signal to several places, not on an input to sum two signals. To add pitch bend (PW) to V/OCT, you need a separate mixer or summer module first, then that output to VCO V/OCT. Second, if Rack suddenly makes no sound and nothing else changed, it may have crashed; restarting Rack and reloading the saved preset has fixed that before, and is worth trying before changing bridge or synth settings.
 
 Velocity, if you want it: do not plug VEL into the same mixer CV that ADSR already uses, or the channel will drone after release, because VCV sums CVs and VEL is held. For brightness with no extra module, plug VEL to VCF frequency CV, with the cutoff down a bit and the frequency CV knob up. For true loudness, add a VCA between VCF and mixer, plug VEL to VCA CV, and leave ADSR on mixer CV; they are then in series, so velocity scales volume and the envelope still gates.
-
-Copyright and licence
-Copyright © 2026 Ed Swain.
-
-This page is published under a GPL non-commercial licence. The licence text is the GNU General Public License, version 3, at https://www.gnu.org/licenses/gpl-3.0.html, with the author's non-commercial condition: please do not sell this page, or use it in a commercial product, without the author's permission.
-
-This page was made by a life long learner with the help of Muse. It is the replacement for Musical Scale Explorer, which was deleted by accident.
